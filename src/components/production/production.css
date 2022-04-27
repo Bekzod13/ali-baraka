@@ -1,0 +1,163 @@
+.production-container{
+    position: relative;
+}
+.production-header{
+    margin-top: 100px;
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.production-text{
+    width: 50%;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.productions{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.product{
+    width: 48%;
+    height: 260px;
+    box-shadow: var(--shadow);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .3s;
+}
+.product:hover{
+    box-shadow: 0 0 5px var(--green);
+}
+.pro-img{
+    width: 50%;
+}
+.pro-img img{
+    width: 100%;
+}
+.pro-detail{
+    width: 50%;
+    padding: 15px;
+}
+.pro-header{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
+}
+.pro-text{
+    margin-top: 20px;
+}
+.little{
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.little-header{
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 80%;
+}
+.little-text{
+    margin: 50px 0;
+    font-weight: 500;
+    width: 80%;
+    line-height: 30px;
+}
+.little-link{
+    font-weight: 500;
+    color: var(--green);
+    margin-right: 30px;
+}
+.little-link-active{
+    border: 2px solid var(--green);
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+.little-left,
+.little-right{
+    width: 50%;
+}
+.little-right{
+    position: relative;
+}
+.little-img1,
+.little-img2,
+.little-img3{
+    position: absolute;
+}
+.little-img1{
+    z-index: 10;
+    top: 150px;
+}
+.little-img2{
+    left: -50px;
+}
+.little-img3{
+    right: 30px;
+    z-index: -1;
+}
+.little-bottom-decoration{
+    width: 100%;
+    height: 150px;
+    margin-top: 220px;
+    position: relative;
+}
+.little-decoration{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(../../images/border.png);
+    background-size: contain;
+    background-repeat: repeat-x;
+    z-index: -10;
+    opacity: .5;
+}
+.decoration-box{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.little-dude{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    color: var(--green);
+}
+.little-icon{
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.mc{
+    font-size: 24px;
+    font-weight: 500;
+}
+.gl{
+    font-weight: 500;
+    font-size: 32px;
+}
+.sl{
+    font-weight: 800;
+}
+.wp{
+    font-family: 'Times New Roman', Times, serif;
+}
+.dec-cloud{
+    position: absolute;
+    right: 0;
+}
+.dec-tree{
+    position: absolute;
+    left: 0;
+    z-index: -10;
+    height: 100%;
+}
+.dec-tree img{
+    height: 100%;
+}
