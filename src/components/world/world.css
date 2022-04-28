@@ -1,0 +1,138 @@
+.world{
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+}
+.w-flag{
+    height: 60%;
+    position: absolute;
+    top: -300px;
+    left: -40px;
+}
+.w-flag img{
+    height: 100%;
+}
+.world-container{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 100px;
+}
+.world-box{
+    width: 55%;
+}
+.w-header{
+    font-size: 60px;
+    font-weight: 700;
+    color: var(--green);
+    text-transform: uppercase;
+}
+.w-text{
+    margin-top: 20px;
+    font-size: 18px;
+    letter-spacing: 1.2px;
+}
+.w-element-box{
+    margin-top: 40px;
+    padding: 20px 50px;
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+}
+.w-element{
+    text-transform: uppercase;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    color: var(--yellow2);
+}
+.w-element p{
+    width: 50%;
+}
+.w-element:nth-child(odd){
+    color: var(--green);
+}
+
+.w-element div{
+    font-size: 24px;
+    color: var(--green);
+    cursor: pointer;
+}
+.client-box{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.c-profile{
+    width: 45%;
+    height: 650px;
+    box-shadow: var(--shadow);
+    background-image: url(../../images/bro.png);
+    background-size: cover;
+    position: relative;
+}
+.c-profile-box,
+.c-profile-btn{
+    position: absolute;
+}
+.c-profile-box{
+    bottom: 0;
+    left: -10%;
+    box-shadow: var(--shadow);
+    padding: 20px 30px;
+    background: var(--wht);
+    width: 60%;
+}
+.c-profile-header{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--green);
+    margin-bottom: 20px;
+}
+.c-profile-text{
+    font-weight: 400;
+    letter-spacing: 1.1px;
+    line-height: 25px;
+}
+.c-profile-link{
+    display: flex;
+    margin-top: 30px;
+    font-weight: 600;
+    color: var(--green);
+}
+.c-profile-btn{
+    bottom: 30px;
+    right: -10px;
+    color: var(--wht);
+    background: var(--green);
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-weight: 200;
+    font-size: 18px;
+}
+.c-details{
+    width: 40%;
+}
+.c-details h1{
+    color: #444;
+    font-size: 60px;
+}
+.c-detail{
+    border-top: 1px solid var(--gray);
+    padding: 20px 0;
+}
+.c-deatil-title{
+    font-size: 24px;
+    color: var(--green);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.c-deatil-text{
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+.c-detail-link{
+    color: var(--green);
+}

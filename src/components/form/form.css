@@ -1,0 +1,114 @@
+form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 200px 0;
+}
+.form{
+    width: 100%;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    position: relative;
+}
+.form::after{
+    content: '';
+    display: flex;
+    width: 150px;
+    height: 150px;
+    background: #60b45a;
+    position: absolute;
+    top: 250px;
+    left: -120px;
+    transform: rotate(45deg);
+}
+.form::before{
+    content: '';
+    display: flex;
+    width: 220px;
+    height: 220px;
+    background: var(--yellow);
+    position: absolute;
+    bottom: 70px;
+    right: -180px;
+    border-radius: 50%;
+    transform: rotate(45deg);
+}
+.form-img{
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+}
+.form-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.form-header{
+    font-size: 30px;
+    font-weight: 900;
+    width: 60%;
+    text-align: center;
+    margin: 30px auto;
+}
+.form-text{
+    width: 100%;
+    padding: 0 40px;
+    text-align: center;
+    line-height: 27px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.form-inputs, 
+.form-textareas, 
+.form-btn{
+    padding: 0 40px;
+}
+.form-inputs {
+    display: flex;
+    justify-content: space-between;
+}
+.form-input,
+.form-textarea{
+    width: 47%;
+    height: 60px;
+    border: none;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+    padding-left: 20px;
+    outline: none;
+    font-size: 18px;
+    background: #f0f0f0;
+    font-family: 'Roboto', sans-serif;
+}
+.form-input::placeholder,
+.form-textarea::placeholder{
+    color: var(--black);
+}
+.form-textareas{
+    margin: 30px 0;
+}
+.form-textarea{
+    width: 100%;
+    height: 180px;
+    padding-top: 20px;
+}
+.form-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 80px);
+    height: 60px;
+    margin: 0 40px 40px 40px;
+    border: none;
+    outline: none;
+    background: var(--green);
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--wht);
+}
