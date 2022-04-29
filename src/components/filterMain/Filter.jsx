@@ -58,7 +58,7 @@ const Filter = () => {
                 category === "stories" && 
                 data.map(item=>{
                     return (
-                        <div className={item.name === null ? 'cat-none':'cat-product'} key={item.id}>
+                        <div className={item.name === null ? 'cat-none':'cat-blog'} key={item.id}>
                             <div className="cat-img">
                                 <img src={item.image} alt={item.name} />
                             </div>
