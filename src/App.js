@@ -1,19 +1,22 @@
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+// import pages
+import Home from './pages/Home';
+import Main from './pages/Main';
+
 
 // import components
-import Hero from './components/hero/Hero';
-import Production from './components/production/Production';
-import World from './components/world/World';
-import Form from './components/form/Form';
+import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 
 function App() {
   return (
     <BrowserRouter>
-      <Hero/>
-      <Production/>
-      <World/>
-      <Form/>
+      <Navbar/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/:category' element={<Main/>}/>
+      </Routes>
       <Footer/>
     </BrowserRouter>
   );
